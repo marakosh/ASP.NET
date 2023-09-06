@@ -1,0 +1,28 @@
+.footer {
+  background-color: #f8f9fa;
+  padding: 40px 0;
+
+  h4 {
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  p {
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .social-icons {
+    a {
+      color: #777;
+      font-size: 20px;
+      margin-right: 10px;
+
+      &:hover {
+        color: #333;
+      }
+    }
+  }
+}

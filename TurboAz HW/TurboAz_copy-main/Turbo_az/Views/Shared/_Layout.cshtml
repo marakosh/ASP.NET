@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>@ViewData["Title"]</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link asp-fallback-href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+          href="lib/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/navbarStyle.css" rel="stylesheet">
+    <link href="css/footerStyle.css" rel="stylesheet">
+    <!--suppress JSUnresolvedLibraryURL -->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script asp-fallback-src="https://code.jquery.com/jquery-3.7.0.min.js"
+            src="lib/node_modules/jquery/dist/jquery.min.js" defer>
+    </script>
+    <script asp-fallback-src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+            src="lib/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" defer> 
+    </script>
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg ">
+        <a class="navbar-brand m-lg-5" href="#">
+            <img src="~/assets/logo_main_navbar.svg" alt="Logo" width="180" class="d-inline-block align-text-top">
+        </a>
+        <div class="container-fluid d-flex justify-content-lg-start">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Bütün elanlar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Avtosalonlar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Ehtiyat hissələr və aksesuarlar</a>
+                </li>
+            </ul>
+        </div>
+        <div class="search">
+            <input type="text" class="form-control" placeholder="Axtar">
+            <span class="bi bi-search icon"></span>
+        </div>
+        <div class="drop nav-item m-3">
+            <a class="nav-link" href="#" id="navbarDropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="bi bi-person-circle"></i>
+            </a>
+            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">Login</a>
+                <a class="dropdown-item" href="#">Sing Up</a>
+            </div>
+        </div>
+    </nav>
+</header>
+
+@RenderBody()
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <h4>Turbo.Az</h4>
+                <p>
+                    Saytın Administrasiyası reklam bannerlərinin və yerləşdirilmiş elanların məzmununa görə məsuliyyət daşımır.
+                    <br>2006-2023 Digital Classifieds MMC. VÖEN: 1405631661
+                </p>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <h4>Contact Us</h4>
+                <p>Email: turbo@turbo.az</p>
+                <p>Phone: (012) 505-77-55</p>
+            </div>
+            <div class="col-lg-4 col-md-12">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/www.turbo.az">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/turbo.az/">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
